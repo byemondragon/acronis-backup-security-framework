@@ -40,7 +40,7 @@
     Author  : Edson Pintado
     Version : 1.0
     Run As  : Administrator / SYSTEM
-    Part of : Acronis Backup Security Framework (Script 3 of 4)
+    Part of : Acronis Backup Security Framework (Script 3 of 5)
 #>
 
 # ============================================================
@@ -79,7 +79,7 @@ function Write-Log {
 if (-not (Test-Path "C:\Logs")) { New-Item -ItemType Directory -Path "C:\Logs" -Force | Out-Null }
 
 Write-Log "======================================================"
-Write-Log " Acronis Backup Security Framework — Script 3 of 4"
+Write-Log " Acronis Backup Security Framework — Script 3 of 5"
 Write-Log " Remediation: Backup Drive Least Privilege"
 Write-Log " Machine         : $env:COMPUTERNAME"
 Write-Log " Drive Letter    : $DriveLetter"
