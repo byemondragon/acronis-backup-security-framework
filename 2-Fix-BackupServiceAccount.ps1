@@ -33,7 +33,7 @@
     Author  : Edson Pintado
     Version : 1.0
     Run As  : Administrator / SYSTEM
-    Part of : Acronis Backup Security Framework (Script 2 of 4)
+    Part of : Acronis Backup Security Framework (Script 2 of 5)
 #>
 
 # ============================================================
@@ -60,7 +60,7 @@ function Write-Log {
 if (-not (Test-Path "C:\Logs")) { New-Item -ItemType Directory -Path "C:\Logs" -Force | Out-Null }
 
 Write-Log "======================================================"
-Write-Log " Acronis Backup Security Framework — Script 2 of 4"
+Write-Log " Acronis Backup Security Framework — Script 2 of 5"
 Write-Log " Remediation: Backup Service Account"
 Write-Log " Machine         : $env:COMPUTERNAME"
 Write-Log " Service Account : .\$ServiceAccount"

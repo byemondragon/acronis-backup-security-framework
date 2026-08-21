@@ -25,7 +25,7 @@
     Version : 1.1
     Run As  : Administrator / SYSTEM
     Type    : Read-Only Audit — no changes made
-    Part of : Acronis Backup Security Framework (Script 1 of 4)
+    Part of : Acronis Backup Security Framework (Script 1 of 5)
 #>
 
 # ============================================================
@@ -51,7 +51,7 @@ function Write-Log {
 if (-not (Test-Path "C:\Logs")) { New-Item -ItemType Directory -Path "C:\Logs" -Force | Out-Null }
 
 Write-Log "======================================================"
-Write-Log " Acronis Backup Security Framework — Script 1 of 4"
+Write-Log " Acronis Backup Security Framework — Script 1 of 5"
 Write-Log " Audit: Backup Service Account Privileges"
 Write-Log " Machine         : $env:COMPUTERNAME"
 Write-Log " Service Account : .\$ServiceAccount"
