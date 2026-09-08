@@ -6,6 +6,8 @@ A 5-script PowerShell framework, orchestrated via NinjaOne, that enforces **leas
 
 ## The Problem
 
+While studying access control models for the SSCP exam, I kept coming back to one question: did our own backup infrastructure actually follow the least privilege principle I was reading about? A quick audit answered that with a big NO!
+
 Backup infrastructure is a common blind spot in security hardening. The Acronis backup service account routinely ends up over-privileged, and sometimes a member of local `Administrators` or even `Domain Admins`, simply because it's easier to grant broad access than to scope it correctly. If that account is ever compromised, an attacker doesn't just lose backups; they get a path to the rest of the environment.
 
 This problem also doesn't have a single answer across an MSP fleet, because not every machine is the same:
