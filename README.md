@@ -99,6 +99,8 @@ See [`/scripts`](./scripts) for the full PowerShell source.
 
 > Note: all scripts read secrets via NinjaOne secure script variables (`Ninja-Property-Get`) —> no credentials are hardcoded anywhere in this framework.
 
+---
+
 ## Development Notes
 
 This framework was designed and directed by me, with AI-assisted development used to accelerate scripting and documentation.
