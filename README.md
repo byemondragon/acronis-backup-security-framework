@@ -66,7 +66,7 @@ flowchart TD
 - **Audit and remediation are separate scripts.** Script 1 never makes changes, it only reports. This means it's safe to schedule on every machine on a recurring basis (e.g. weekly) for continuous compliance checking, without risk of unintended changes.
 - **Machine classification is automated, not assumed.** Rather than manually tagging which servers are Domain Controllers, Script 5 runs its own 3-method consensus check and keeps a NinjaOne custom field (`isActiveDirectoryAgent`) current. Every other script reads this field instead of guessing.
 - **NTFS permissions, not just group membership, are the real control.** On a Domain Controller, the backup account *must* be a Domain Admin for Acronis's Agent for Active Directory to function, but Domain Admins membership doesn't grant it backup-folder access beyond the explicit ACL. The framework relies on NTFS as the actual enforcement boundary, with group membership treated as a separate (and necessary) concern.
-- **Every action is logged.** Each script writes timestamped, leveled logs to `C:\Logs`, giving a clear audit trail of what was found and what was changed on every run — useful both for compliance and for troubleshooting client escalations.
+- **Every action is logged.** Each script writes timestamped, leveled logs to `C:\Logs`, giving a clear audit trail of what was found and what was changed on every run; useful both for compliance and for troubleshooting client escalations.
 
 ---
 
